@@ -1,5 +1,5 @@
 ##Reset Password
-Set-ADAccountPassword -Server domain -Identity username
+>.Set-ADAccountPassword -Server domain -Identity username
 #replace the 'domain' name and username ex: Set-ADAccountPassword -Server google.com -Identity prabhudev
 
 ##Display fullname of a user 
