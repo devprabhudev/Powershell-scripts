@@ -11,6 +11,7 @@ replace username with actual username
 >$User = Read-Host -Prompt 'Input the user name'; Get-ADUser -Filter {name -like $User -or samaccountname -like $User} | select SamAccountName, Enabled
 
 ## Read usernames from a txt file and check if the users are active
+```
 $ $infile = "C:\Users\prabhudev\Desktop\Users.txt"
 #
 $ $users = Get-Content $infile  
@@ -23,4 +24,5 @@ $ }
 $ else { 
 $  Write-Host "User '$user' not found in AD"
 $  }
-$ }
+ }
+```
