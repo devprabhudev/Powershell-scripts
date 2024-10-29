@@ -9,3 +9,6 @@ replace username with actual username
 
 ## Check is user account is enabled with username prompt
 >$User = Read-Host -Prompt 'Input the user name'; Get-ADUser -Filter {name -like $User -or samaccountname -like $User} | select SamAccountName, Enabled
+
+## Read usernames from a txt file and check if the users are active
+
